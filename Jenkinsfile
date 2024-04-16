@@ -27,7 +27,7 @@ pipeline {
         stage('Visit /health route') {
             steps {
                 script {
-                    sh 'curl http://localhost:3000/health'
+                    sh 'curl http://http://ec2-54-226-72-14.compute-1.amazonaws.com/:3000/health'
                 }
             }
         }
